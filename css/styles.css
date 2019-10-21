@@ -23,12 +23,14 @@ body
 
 h4 {
     font-size: 45.0px;
+    margin-top: 30px;
 }
 
 th {
-    font-size: 25.0px;
+    font-size: 60px;
     padding: 15px;
-    background-color: #35b729;
+    /* background-color: #35b729;*/
+    text-align: center;
     color: white;
  }
 
@@ -325,6 +327,7 @@ h1 {
 
 .sponsors
 {
+    display: none;
     background-color: #EBEBD3;
     padding-left:100px;
     padding-right:100px;

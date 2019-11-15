@@ -12,6 +12,8 @@
     <link rel="shortcut icon" href="https://image.ibb.co/jpoiQ7/favicon.png">
   </head>
   <body>
+    <div class="iiii">
+    <div class="rellax first-background" data-rellax-speed="-40"></div>
     <nav class="navbar navbar-toggleable-md navbar-light bg-faded sticky-top">
       <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,63 +45,63 @@
               <!-- <a class="btn btn-contact" style="margin-left:5px;" href="https://goo.gl/forms/6htv7HOfxvxEVPFT2" target="_blank" role="button">Apply for Travel Grant</a> -->
             </div>
           </div>
-          <br>
-          <div class="terminal-items">
-              <div class=terminal_menu>
-                  <header>
-                      <div class="button red"></div>
-                      <div class="button yellow"></div>
-                      <div class="button green"></div>
-                  </header>
-              </div>
-              <div class="terminal">
-                  <span id="typed"></span>
-                  <script>
-                      var typed = new Typed('#typed', {
-                            strings: ['<p id="sudo">sudo npm install -g hackathon^500 </p><p id="sudo">npm run hackathon^500  </p> `Starting hackathon`^500.^300.^300.^300 <br><iframe src="images/logo.html" style="border:none;overflow:hidden;margin:0 auto;margin-top:30px;display:block;" height="300" width="560"></iframe>^200<br>`<p class="text-center" style="margin-top:-70px;">Ready. Set. Hack.</p>`'],
-                            typeSpeed: 55,
-                            showCursor: false,
-                        });
-                        // Select all links with hashes
-                        $('a[href*="#"]')
-                        // Remove links that don't actually link to anything
-                            .not('[href="#"]')
-                            .not('[href="#0"]')
-                            .click(function(event) {
-                                // On-page links
-                                if (
-                                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-                                    location.hostname == this.hostname
-                                ) {
-                                    // Figure out element to scroll to
-                                    var target = $(this.hash);
-                                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                                    // Does a scroll target exist?
-                                    if (target.length) {
-                                        // Only prevent default if animation is actually gonna happen
-                                        event.preventDefault();
-                                        $('html, body').animate({
-                                                scrollTop: target.offset().top - 60
-                                            }, 1000, function() {
-                                                // Callback after animation
-                                                // Must change focus!
-                                                var $target = $(target);
-                                                $target.focus();
-                                                if ($target.is(":focus")) { // Checking if the target was focused
-                                                    return false;
-                                                } else {
-                                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                                    $target.focus(); // Set focus again
-                                                };
-                                            });
-                                        }
-                                    }
-                                });
-                </script>
-              </div>
-          </div> <!-- End class terminal-items -->
-          </div> <!-- End class col... section -->
-        </div> <!-- End class row -->
+          <br />
+        </div>
+        <div class="terminal-section">
+          <div class=terminal_menu>
+            <header>
+              <div class="button red"></div>
+              <div class="button yellow"></div>
+              <div class="button green"></div>
+            </header>
+          </div>
+          <div class="terminal">
+            <span id="typed"></span>
+            <script>
+              var typed = new Typed('#typed', {
+                  strings: ['<p id="sudo">sudo npm install -g hackathon^500 </p><p id="sudo">npm run hackathon^500  </p> `Starting hackathon`^500.^300.^300.^300 <br><image src="images/HatterHacks_Logo_without_name_transparent_green.png" id="myframe" style="border:none;overflow:hidden;margin:0 auto;margin-top:30px;display:block; height: 250px; width: 420px"></image><br>`<p class="text-center" style="margin-top:-10px;">Ready. Set. Hack.</p>`'],
+                  typeSpeed: 55,
+                  showCursor: false,
+              });
+              // Select all links with hashes
+              $('a[href*="#"]')
+                  // Remove links that don't actually link to anything
+                  .not('[href="#"]')
+                  .not('[href="#0"]')
+                  .click(function(event) {
+                      // On-page links
+                      if (
+                          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                          location.hostname == this.hostname
+                      ) {
+                          // Figure out element to scroll to
+                          var target = $(this.hash);
+                          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                          // Does a scroll target exist?
+                          if (target.length) {
+                              // Only prevent default if animation is actually gonna happen
+                              event.preventDefault();
+                              $('html, body').animate({
+                                  scrollTop: target.offset().top - 60
+                              }, 1000, function() {
+                                  // Callback after animation
+                                  // Must change focus!
+                                  var $target = $(target);
+                                  $target.focus();
+                                  if ($target.is(":focus")) { // Checking if the target was focused
+                                      return false;
+                                  } else {
+                                      $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                      $target.focus(); // Set focus again
+                                  };
+                              });
+                          }
+                      }
+                  });
+            </script>
+          </div>
+        </div>
+      </div>
       <!-- <div class="row">
         <div class="col-xs-12 col-lg-12 image-gallery" id="grey">
           <div class="image-holder">
@@ -178,7 +180,7 @@
       <span id="about"></span>
       <div class="row about">
         <div class="col-lg-12">
-          <h3 class="header-hackathon text-center">About Us</h3>
+          <h3 class="header-hackathon text-center" style="background: rgb(7, 75, 138);">About Us</h3>
           <br />
         </div>
         <div class="col-lg-12">
@@ -186,7 +188,7 @@
                 <h2 style="color:black;">This year, we're changing things up!</h2>
                 <br />
                 <div class="panel-body-intro">
-                    <p style="color:black;"style="font-size:17px;">In this year's Greater Central Florida Tech Faire +  Hackathon we are having a 12-hour "Day of Learning" in addition to a 24-hour hackathon!! The Day of Learning will take place on Friday, February 21st, and the Hackathon will take place Saturday through Sunday, April 22-23rd. Consider this "Day of Learning" a computer science workshop marathon! There will be crash courses and workshops nearly every hour for 12 straight hours for all experience levels! Our hope is that you use this Day of Learning to learn and practice using new concepts, environments, and languages in computer science before the hackthon, so that when the hackathon begins, you have all 24 hours of the hackathon to apply what you've learned to your project and take breaks to attend tech talks by our professors and sponsors!</p>
+                    <p style="color:black;"style="font-size:17px;">In this year's Greater Central Florida Tech Faire +  Hackathon we are having a 12-hour "Day of Learning" in addition to a 24-hour hackathon!! The Day of Learning will take place on Friday, February 21st, and the Hackathon will take place Saturday through Sunday, February 22-23rd. Consider this "Day of Learning" a computer science workshop marathon! There will be crash courses and workshops nearly every hour for 12 straight hours for all experience levels! Our hope is that you use this Day of Learning to learn and practice using new concepts, environments, and languages in computer science before the hackthon, so that when the hackathon begins, you have all 24 hours of the hackathon to apply what you've learned to your project and take breaks to attend tech talks by our professors and sponsors!</p>
                     <h2 style="color:black;font-size:20px;"> <strong>If you do not want to participate in the Day of Learning, feel free to arrive on Saturday morning for the Hackathon instead! But if you'd like to arrive early and participate in the Day of Learning, plan to arrive on Friday, February 21st. See the <a href="#schedule">Schedule</a> below for more details.</strong></h2>
                 </div>
 
@@ -232,10 +234,9 @@
 
 
       </div>
-      <span id="faq"></span>
       <div class="row about faq">
         <div class="col-lg-12">
-          <h3 class="header-hackathon text-center">FAQ</h3>
+          <h3 class="header-hackathon text-center" style="background: rgb(15, 78, 138);">FAQ</h3>
           <br />
         </div>
 
@@ -306,13 +307,15 @@
         </div>
 
       </div>
-      <span id="about">
-      	<div class="row" style="color:white;">
-      		<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD-sOxmgXbIbP-PPTQJAklbBD52QmS3C64'></script><div style='overflow:hidden;height:490px;width:100vw;'><div id='gmap_canvas' style='height:490px;width:100vw;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/'>embedded google maps</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=7565498023552e0735776a8d481534a760c1f750'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(29.0366133,-81.3032905),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(29.0366133,-81.3032905)});infowindow = new google.maps.InfoWindow({content:'<div style="color: black"><strong>Building: Carlton-Union Building, Second Floor</strong><br>421 N Woodland Blvd<br>32723 DeLand<br></div>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyD-sOxmgXbIbP-PPTQJAklbBD52QmS3C64'></script>
+          <div style="width: 80vw; margin: 0 auto; background: rgb(31, 139, 116); display: flex; border-radius: 10px">
+              <div style='height:490px; width: 15px;'></div>
+            <div id='gmap_canvas' style='height:490px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; flex: 1'></div>
+          </div>
+          <a href='http://maps-generator.com/' style="opacity: 0;">embedded google maps</a>
+          <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=7565498023552e0735776a8d481534a760c1f750'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(29.0366133,-81.3032905),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(29.0366133,-81.3032905)});infowindow = new google.maps.InfoWindow({content:'<div style="color: black"><strong>Building: Carlton-Union Building, Second Floor</strong><br>421 N Woodland Blvd<br>32723 DeLand<br></div>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
           </script><br/><br/>
         </div>
-        </div>
-      </span>
       <span id="sponsors"></span>
       <div class="row about sponsors" style="display: none;">
         <div class="col-lg-12">
@@ -349,23 +352,21 @@
           </center>
         </div>
       </div>
-      <center>
-        <table id="schedule">
-            <col width="100">
-          <h4>Schedule</h4>
-    
-          <thead>
-            <tr>
-              <th scope="col">TBD</th>
-            </tr>
-          </thead>
-          <tbody>
-          </tbody>
-    
-        </table>
-    </center>
     </section>
-    <footer class="page-footer font-small blue pt-4 mt-4">
+    <footer class="page-footer font-small blue pt-4 mt-4" style="background: rgb(18, 20, 22)">
+      <table id="schedule" style="margin: 0 auto; margin-bottom: 40px; background: rgb(18, 20, 22)">
+        <col width="100">
+        <h4 style="text-align: center; background: rgb(18, 20, 22)">Schedule</h4>
+
+      <thead>
+        <tr>
+          <th scope="col">TBD</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+
+    </table>
       <div class="container-fluid text-center text-md-left">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -385,10 +386,28 @@
     </footer>
       <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
+<div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  </body>
+  <script>  
+    // Rellax.js  Library
+    (function(n,h){"function"===typeof define&&define.amd?define([],h):"object"===typeof module&&module.exports?module.exports=h():n.Rellax=h()})("undefined"!==typeof window?window:global,function(){var n=function(h,p){var a=Object.create(n.prototype),l=0,r=0,k=0,t=0,c=[],u=!0,B=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame||function(a){return setTimeout(a,1E3/60)},q=null,C=window.cancelAnimationFrame||
+    window.mozCancelAnimationFrame||clearTimeout,D=window.transformProp||function(){var a=document.createElement("div");if(null===a.style.transform){var b=["Webkit","Moz","ms"],e;for(e in b)if(void 0!==a.style[b[e]+"Transform"])return b[e]+"Transform"}return"transform"}();a.options={speed:-2,center:!1,wrapper:null,relativeToWrapper:!1,round:!0,vertical:!0,horizontal:!1,callback:function(){}};p&&Object.keys(p).forEach(function(d){a.options[d]=p[d]});h||(h=".rellax");var m="string"===typeof h?document.querySelectorAll(h):
+    [h];if(0<m.length){a.elems=m;if(a.options.wrapper&&!a.options.wrapper.nodeType)if(m=document.querySelector(a.options.wrapper))a.options.wrapper=m;else{console.warn("Rellax: The wrapper you're trying to use doesn't exist.");return}var w=function(){for(var d=0;d<c.length;d++)a.elems[d].style.cssText=c[d].style;c=[];r=window.innerHeight;t=window.innerWidth;x();for(d=0;d<a.elems.length;d++){var b=a.elems[d],e=b.getAttribute("data-rellax-percentage"),g=b.getAttribute("data-rellax-speed"),h=b.getAttribute("data-rellax-zindex")||
+    0,l=b.getAttribute("data-rellax-min"),n=b.getAttribute("data-rellax-max"),v=a.options.wrapper?a.options.wrapper.scrollTop:window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;a.options.relativeToWrapper&&(v=(window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop)-a.options.wrapper.offsetTop);var f=a.options.vertical?e||a.options.center?v:0:0,k=a.options.horizontal?e||a.options.center?a.options.wrapper?a.options.wrapper.scrollLeft:window.pageXOffset||
+    document.documentElement.scrollLeft||document.body.scrollLeft:0:0;v=f+b.getBoundingClientRect().top;var m=b.clientHeight||b.offsetHeight||b.scrollHeight,p=k+b.getBoundingClientRect().left,q=b.clientWidth||b.offsetWidth||b.scrollWidth;f=e?e:(f-v+r)/(m+r);e=e?e:(k-p+t)/(q+t);a.options.center&&(f=e=.5);g=g?g:a.options.speed;e=y(e,f,g);b=b.style.cssText;f="";0<=b.indexOf("transform")&&(f=b.indexOf("transform"),f=b.slice(f),f=(k=f.indexOf(";"))?" "+f.slice(11,k).replace(/\s/g,""):" "+f.slice(11).replace(/\s/g,
+    ""));c.push({baseX:e.x,baseY:e.y,top:v,left:p,height:m,width:q,speed:g,style:b,transform:f,zindex:h,min:l,max:n})}u&&(window.addEventListener("resize",w),u=!1);z()},x=function(){var d=l,b=k;l=a.options.wrapper?a.options.wrapper.scrollTop:(document.documentElement||document.body.parentNode||document.body).scrollTop||window.pageYOffset;k=a.options.wrapper?a.options.wrapper.scrollLeft:(document.documentElement||document.body.parentNode||document.body).scrollLeft||window.pageXOffset;a.options.relativeToWrapper&&
+    (l=((document.documentElement||document.body.parentNode||document.body).scrollTop||window.pageYOffset)-a.options.wrapper.offsetTop);return d!=l&&a.options.vertical||b!=k&&a.options.horizontal?!0:!1},y=function(d,b,e){var c={};d=100*e*(1-d);b=100*e*(1-b);c.x=a.options.round?Math.round(d):Math.round(100*d)/100;c.y=a.options.round?Math.round(b):Math.round(100*b)/100;return c},A=function(){x()&&!1===u&&z();q=B(A)},z=function(){for(var d,b=0;b<a.elems.length;b++){d=y((k-c[b].left+t)/(c[b].width+t),(l-
+    c[b].top+r)/(c[b].height+r),c[b].speed);var e=d.y-c[b].baseY,g=d.x-c[b].baseX;null!==c[b].min&&(a.options.vertical&&!a.options.horizontal&&(e=e<=c[b].min?c[b].min:e),a.options.horizontal&&!a.options.vertical&&(g=g<=c[b].min?c[b].min:g));null!==c[b].max&&(a.options.vertical&&!a.options.horizontal&&(e=e>=c[b].max?c[b].max:e),a.options.horizontal&&!a.options.vertical&&(g=g>=c[b].max?c[b].max:g));a.elems[b].style[D]="translate3d("+(a.options.horizontal?g:"0")+"px,"+(a.options.vertical?e:"0")+"px,"+c[b].zindex+
+    "px) "+c[b].transform}a.options.callback(d)};a.destroy=function(){for(var d=0;d<a.elems.length;d++)a.elems[d].style.cssText=c[d].style;u||(window.removeEventListener("resize",w),u=!0);C(q);q=null};w();A();a.refresh=w;return a}console.warn("Rellax: The elements you're trying to select don't exist.")};return n});
+</script>
+<script>
+document.getElementsByClassName("first-background")[0].style.height = document.getElementsByClassName("iiii")[0].offsetHeight + "px";
+document.getElementsByClassName("iiii")[0].style.height = document.getElementsByClassName("iiii")[0] + "px";
+document.getElementsByClassName("iiii")[0].style.overflowY = "hidden";
+var rellax = new Rellax('.rellax');
+</script>  
+</body>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68100609-3"></script>
   <script>

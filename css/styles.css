@@ -19,8 +19,21 @@ body
     text-rendering: optimizeLegibility;
     color:#f2f2f2;
     overflow-x: hidden;
+    position: relative;
 }
-
+.iiii {
+    position: relative;
+}
+.first-background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    width: 100%;
+    background: url('https://c4.wallpaperflare.com/wallpaper/51/661/211/8k-sagittarius-minimalism-stars-wallpaper-preview.jpg');
+}
 h4 {
     font-size: 45.0px;
     margin-top: 30px;
@@ -46,7 +59,7 @@ tr:nth-child(even) {
 
 a, a:hover, a:active, a:visited
 {
-    color: #35b729;
+    color: rgb(35, 155, 75);
     text-decoration: none !important;
 }
 
@@ -54,7 +67,6 @@ a, a:hover, a:active, a:visited
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
-    background-color: black;
     color: white;
 }
 
@@ -165,7 +177,7 @@ h1 {
 .navbar
 {
     padding: 0 13vw 0 12vw;
-    background-color: black;
+    background-color: rgb(18, 20, 22);
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
 }
@@ -173,7 +185,7 @@ h1 {
 .navbar
 {
     font-size: 15px;
-    box-shadow: 0 2px 20px -5px #50575B;
+    box-shadow: 0 2px 20px -5px rgb(0, 0, 0);
 }
 
 .navbar-brand
@@ -192,7 +204,7 @@ h1 {
 
 #signup
 {
-    color: #35b729;
+    color: rgb(35, 155, 75);
 
 }
 .navbar-nav a
@@ -233,7 +245,7 @@ h1 {
     background-color: black;
     color: #40484a;
 }
-
+/*
 #green
 {
     background-color: #35b729;
@@ -253,7 +265,7 @@ h1 {
     width:100%;
     z-index:-1;
 }
-
+*/
 #grey
 {
     background-color: #F8FCFA;
@@ -262,8 +274,13 @@ h1 {
 .main-title-section
 {
     padding: 50px 50px 30px 50px;
-    min-height:100vh;
+    min-height: 50vh;
+    width: 100%;
+    max-width: 80vw;
+    margin: 0 auto;
+    margin-top: 10px;
     position: static;
+    background-color: rgba(26, 26, 26, 0.418);
 }
 
 .about
@@ -271,7 +288,6 @@ h1 {
     padding: 50px 20px 70px 20px;
     min-height:100vh;
     position: static;
-    background-color: #35b729;
 
 }
 
@@ -296,8 +312,8 @@ h1 {
  }
 
  .panel-body li {
-   display: block
-   overflow:scroll;
+   display: block;
+   overflow: scroll;
  }
 
  .panel-body li:before {
@@ -319,11 +335,6 @@ h1 {
    border: solid #eee;
    border-width: 0 4px 0 0;
  }
-
-.faq
-{
-    background-color: black;
-}
 
 .sponsors
 {
@@ -373,15 +384,18 @@ h1 {
     position: static;
 }
 
+.terminal-section {
+    margin: 0 auto;
+}
 .terminal-items {
     padding-top: 0vh;
 }
 
-
 .terminal_menu
 {
+    width: 100vw;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-top: 30px;
     color: #525252;
     border-radius: 8px 8px 0 0;
     padding-left: 10px;
@@ -436,7 +450,12 @@ h1 {
     content: "Stetson$ ";
     color:#35b729;
 }
-
+/*
+.myframe {
+    width: 600px;
+    length: 240px;
+}
+*/
 .image-holder {
   display:flex;
   }
